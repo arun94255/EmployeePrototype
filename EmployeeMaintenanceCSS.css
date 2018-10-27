@@ -86,3 +86,45 @@ p.UED_p1{
 	font-family: sans-serif,Verdana, Arial, Helvetica;
 	padding:1%;
 }
+/* Update Employee */
+#UE_ha{
+	font-family:sans-serif,Arial, Helvetica; 
+}
+table.UE_table1{
+	width:53%;
+}
+table.UE_table1 tr{
+	background-color:#CCCCCC;
+}
+table.UE_table1 tr td{
+	width:42%;
+	font-family:sans-serif,Arial, Helvetica;
+	font-size:13;
+}
+table.UE_table1 tr:nth-child(2) td:nth-child(1) span{
+	color:#FF0000;
+}
+table.UE_table1 tr:nth-child(3) td:nth-child(1) span{
+	color:#FF0000;
+}
+table.UE_table1 tr:nth-child(5) td:nth-child(1) span{
+	color:#FF0000;
+}
+table.UE_table1  tr td:nth-child(2){
+	width:3%;
+}
+table.UE_table1 tr td:nth-child(3){
+	width:55%;
+}
+table.UE_table2{
+	width:53%;
+	border:0;
+}
+table.UE_table2 tr td{
+	font-family:sans-serif,Arial, Helvetica ;
+	font-size:13;
+	font-style:italic;
+}
+table.UE_table2 tr td span{
+	color:#FF0000;
+}
