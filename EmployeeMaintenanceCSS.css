@@ -9,6 +9,22 @@ table tr td.mid{
 table tr td.end{
 	text-align:left;
 }
+table.footer{
+	width:91%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:#CCCCCC;
+	}
+table.footer tr{
+	border-color:#CCCCCC;	
+}
+table.footer tr td{	
+	font-family:Verdana, Arial, Helvetica, sans-serif;	
+    font-size:+13;	
+	text-align:center;
+}
 
 
 
@@ -36,22 +52,7 @@ table#EMHtbl1 tr td{
 	font-family:Verdana, Arial, Helvetica, sans-serif;	
      font-size:+13;		
 }
-table.footer{
-	width:91%;
-	border:0;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:center;
-	background-color:#CCCCCC;
-	}
-table.footer tr{
-	border-color:#CCCCCC;	
-}
-table.footer tr td{	
-	font-family:Verdana, Arial, Helvetica, sans-serif;	
-    font-size:+13;	
-	text-align:center;
-}
+
 
 /*  Employee Maintanance option*/
 table.EMOtbl1{
