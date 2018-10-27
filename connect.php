@@ -1,9 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "arundb";
-$dbname = "jantastoredb";
-
+$password = "root";
+$dbname = "emphub";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname); 
 // Check connection
@@ -12,7 +11,6 @@ if ($conn->connect_error) {
 } 
 else{ //echo "connected with $dbname";
 }  
-
 // sql to create table
 $sql = "use $dbname";
 if ($conn->query($sql) === TRUE) {
