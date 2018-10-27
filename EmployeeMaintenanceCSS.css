@@ -1,3 +1,6 @@
+
+/*=========================================Arun Contribution ======================================*/
+
 /*Common for all*/
 table tr td.first{
 	text-align:right;
@@ -77,6 +80,7 @@ table.VEtbl1{
 	margin-left:auto;
 	margin-right:auto;
 }
+/*=========================================Manish Contribution ======================================*/
 /* Upload Employee Data*/
 div#UED_div{
 	text-align:center;	
@@ -129,3 +133,43 @@ table.UE_table2 tr td{
 table.UE_table2 tr td span{
 	color:#FF0000;
 }
+/*=========================================Anand Contribution ======================================*/
+/* Upload Employee Data Confirm */
+
+p.UMDCp1
+{
+	font-family:sans-serif,Helvetica, Arial,Verdana ;	
+	font-size:+60;
+	text-align:center;
+}
+table#UEDCTB1{
+	width:91%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#CCCCCC;
+	}
+table#UEDCTB1 tr td{
+	font-size:15;
+	font-family:Arial, Helvetica, sans-serif;
+}
+table#UEDCTB2{
+	width:75%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	
+	}
+table#UEDCTB2 tr td{
+	font-size:20;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FF0000;
+}
+p.UMDCp2
+{
+	font-family:Arial, Helvetica, sans-serif ;	
+	font-size:+20;
+	text-align:center;
+}
+
