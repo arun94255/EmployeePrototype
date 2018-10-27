@@ -9,9 +9,9 @@
 <div id=SEd1>
   <p id=SEp1 class=SEp1><strong>Employee 
     Maintenance</strong> </p>
-  <table id=SEtb1>
+  <table class=EMOtbl1>
     <tr> 
-      <td width="63%"><font size="1"></font></td>
+      <td width="63%"></td>
       <td width="26%"> <div align="right" class=SEf1 >Welcome, 
           ihUser</div></td>
       <td width="11%"> <div align="right" class=SEf1><a href="EmployeeMaintenanceHome.html">Logout</a></div></td>
@@ -21,76 +21,74 @@
   <h3 class=SEf1>Search Options</h3>
   <table id=SEtb2 align="center">
     <tr bgcolor="#CCCCCC"> 
-      <td width="22%"> 
-        <div align="right" class=SEf1>Employee 
-          Id<font color="#FF0000">*</font></div></td>
-      <td width="14%" class=SEf1></td>
-      <td width="64%"class=SEf1> 
+      <td width="22%" class="first SEf1" >Employee 
+          Id<font color="#FF0000">*</font></td>
+      <td width="14%" class="mid SEf1"></td>
+      <td width="64%"class="end SEf1"> 
         <input type="text" name="textfield">
         </td>
     </tr>
     <tr bgcolor="#CCCCCC"> 
-      <td> 
-        <div align="right"class=SEf1>First 
-          Name<font color="#FF0000">*</div></td>
-      <td class=SEf1></td>
-      <td class=SEf1> 
+      <td class="first SEf1"> 
+        First 
+          Name<font color="#FF0000">*</td>
+      <td class="mid SEf1"></td>
+      <td class="end SEf1"> 
         <input type="text" name="textfield2">
         (Use * for wild card search) </td>
     </tr>
     <tr bgcolor="#CCCCCC"> 
-      <td> 
-        <div align="right"class=SEf1>Last 
-          Name<font color="#FF0000">*</font></div></td>
-      <td class=SEf1> </td>
-      <td class=SEf1> 
+      <td class="first SEf1"> 
+        Last 
+          Name<font color="#FF0000">*</font></td>
+      <td class="SEf1 mid"> </td>
+      <td class="SEf1 end"> 
         <input type="text" name="textfield3">
         (Use * for wild card search) </td>
     </tr>
     <tr bgcolor="#CCCCCC"> 
-      <td> 
-        <div align="right" class=SEf1>Date 
-          Of Birth</div></td>
-      <td> 
-        <div align="center" class=SEf1> 
+      <td class="first SEf1"> 
+        Date 
+          Of Birth</td>
+      <td class="mid SEf1"> 
+         
           <select name="select">
             <option selected>=</option>
             <option>&gt;</option>
             <option>&lt;</option>
           </select>
-          </div></td>
-      <td class=SEf1> 
+          </td>
+      <td class="SEf1 end"> 
         <input type="text" name="textfield32">
         <font size="1"> (mm/dd/yyyy) </font></td>
     </tr>
     <tr bgcolor="#CCCCCC"> 
-      <td> 
-        <div align="right" class=SEf1>Date 
-          Of Joining</div></td>
-      <td> 
-        <div align="center" class=SEf1> 
+      <td class="first SEf1"> 
+        Date 
+          Of Joining</td>
+      <td class="mid SEf1"> 
           <select name="select2">
             <option selected>=</option>
             <option>&gt;</option>
             <option>&lt;</option>
           </select>
-          </div></td>
-      <td class=SEf1> 
+         </td>
+      <td class="end SEf1"> 
         <input type="text" name="textfield33">
         <font size="1">(mm/dd/yyyy) </font></td>
     </tr>
     <tr bgcolor="#CCCCCC"> 
-      <td> 
-        <div align="right" class=SEf1>Grade</div></td>
-      <td> 
-        <div align="center" class=SEf1> 
+      <td class="first SEf1"> 
+        Grade</td>
+      <td class="mid SEf1"> 
+         
           <select name="select3">
             <option selected>=</option>
             <option>&gt;</option>
             <option>&lt;</option>
           </select>
-          </div></td>
-      <td class=SEf1> 
+          </td>
+      <td class="SEf1 end"> 
         <select name="select6" size="3" multiple>
           <option>M1</option>
           <option>M2</option>
@@ -102,22 +100,18 @@
         </select>
         </td>
     </tr>
-    <tr> 
+    <tr style="background-color:#FFFFFF;"> 
       <td colspan="3" class=SEf1><em><font color="#FF0000">*</font>At 
         least one of the fields should be selected</em></td>
     </tr>
-    <tr> 
-      <td class=SEf1></td>
-      <td class=SEf1></td>
-      <td class=SEf1></td>
-    </tr>
+    
   </table>
   <p>
     <input type="submit" name="Submit" value="Search" onclick = "Javascript:window.location='SearchEmployeeResults.html'">
   </p>
   <p class=SEf1><a href="EmployeeMaintenanceOptions.html">Return 
     to Main Menu</a></p>
-  <table id=SEtb1>
+  <table class=footer>
     <tr > 
       <td><div align="center" class=SEf1> 
           <font size="1" face="Arial, Helvetica, sans-serif">&copy; ihGlobal 
