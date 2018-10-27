@@ -3,7 +3,7 @@
 <head>
 <title>Employee Maintenance - Upload Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="EmployeeMaintenanceCSS.css" rel="stylesheet" type="text/css">
+<link href="EmployeeMaintenanceCSS_Manish.css" rel="stylesheet" type="text/css">
 <script>
 function redirect()
 {
@@ -14,33 +14,31 @@ window.location="UploadEmployeeDataConfirm.html";
 
 <body>
 <div id="UED_div">
-  <p id="UED_div_a">Employee Maintenance </p>
-  <table width="91%" border="0" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#CCCCCC"> 
-      <td width="63%"><font size="1">&nbsp;</font></td>
-      <td width="26%"> <div align="right"><font size="1" face="Arial, Helvetica, sans-serif">Welcome, 
-          ihUser</font></div></td>
-      <td width="11%"> <div align="right"><font size="1" face="Arial, Helvetica, sans-serif"><a href="EmployeeMaintenanceHome.html">Logout</a></font></div></td>
-    </tr>
-  </table>
-  <p>&nbsp;</p>
-  <p> <font size="2" >Please Select a File to upload: 
-    </font> 
+ <h2 class="EMHh2a" id="EMHh2">Employee Maintenance</h2>
+<table class="EMOtbl1">
+  <tr> 
+    <td width="63%"></td>
+    <td width="26%">Welcome,ihUser</td>
+    <td width="11%"><a href="EmployeeMaintenanceHome.html">Logout</a></td>
+  </tr>
+</table>
+<br/><br/>
+  
+  <p class="UED_p1"> Please Select a File to upload: 
     <input type="file" name="file">
   </p>
-  <p>
+  <p class="UED_p1">
     <input type="submit" name="Submit" value="Upload Data" onclick="redirect();">
   </p>
-  <p><font size="2" ><a href="EmployeeMaintenanceOptions.html">Return 
-    to Main Menu</a></font></p>
-  <table width="91%" border="0" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#CCCCCC"> 
-      <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">&nbsp;</font> 
-          <font size="1" face="Arial, Helvetica, sans-serif">&copy; ihGlobal 
-          Solutions 2005, All rights reserved.</font></div></td>
+  <p class="UED_p1"><a href="EmployeeMaintenanceOptions.html">Return 
+    to Main Menu</a></p>
+  <table class="footer">
+    <tr > 
+      <td>
+          &copy; ihGlobal Solutions 2005, All rights reserved.</td>
     </tr>
   </table>
-  <p>&nbsp;</p>
+  
 </div>
 </body>
 </html>
