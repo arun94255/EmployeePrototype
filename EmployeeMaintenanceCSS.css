@@ -1,13 +1,55 @@
-div#UED_div{
+/*Employee Maintanance Home*/
+h2,p.EMHh2a{
+font-family:Verdana, Arial, Helvetica, sans-serif;	
+font-size:+20;
+text-align:center;
+}
+h2#EMHh2{
+font-size:+40;
+}
+table#EMHtbl1{
+	width:32%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
 	text-align:center;
-	
-	 
-	
+	background-color:#CCCCCC;
+	}
+table#EMHtbl1 tr{
+	border-color:#000000;	
 }
-p.UED_P{
-	font-family:Verdana, Arial, Helvetica, sans-serif;
+table#EMHtbl1 tr td{	
+	font-family:Verdana, Arial, Helvetica, sans-serif;	
+     font-size:+13;		
 }
-p#UED_P_a{
-	size:40;
-	
+table.footer{
+	width:91%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:#CCCCCC;
+	}
+table.footer tr{
+	border-color:#CCCCCC;	
+}
+table.footer tr td{	
+	font-family:Verdana, Arial, Helvetica, sans-serif;	
+    font-size:+13;	
+	text-align:center;
+}
+
+/*  Employee Maintanance option*/
+table.EMOtbl1{
+	width:91%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:#CCCCCC;
+}
+table.EMOtbl1 tr td{
+		text-align:right;
+	font-family:Verdana, Arial, Helvetica, sans-serif;	
+     font-size:+13;		
 }
