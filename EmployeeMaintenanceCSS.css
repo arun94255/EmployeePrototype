@@ -1,0 +1,39 @@
+h2.EMHh2a{
+font-family:Verdana, Arial, Helvetica, sans-serif;	
+font-size:+40;
+text-align:center;
+}
+h2#EMHh2{
+font-size:+20;
+}
+table#EMHtbl1{
+	width:32%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:#CCCCCC;
+	}
+table#EMHtbl1 tr{
+	border-color:#000000;	
+}
+table#EMHtbl1 tr td{	
+	font-family:Verdana, Arial, Helvetica, sans-serif;	
+     font-size:+13;		
+}
+table#EMHtbl2{
+	width:91%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:#CCCCCC;
+	}
+table#EMHtbl2 tr{
+	border-color:#CCCCCC;	
+}
+table#EMHtbl2 tr td{	
+	font-family:Verdana, Arial, Helvetica, sans-serif;	
+     font-size:+13;	
+		text-align:center;
+}
