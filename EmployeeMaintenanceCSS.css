@@ -53,3 +53,12 @@ table.EMOtbl1 tr td{
 	font-family:Verdana, Arial, Helvetica, sans-serif;	
      font-size:+13;		
 }
+/* Upload Employee Data*/
+div#UED_div{
+	text-align:center;	
+}
+p.UED_p1{
+	margin:auto;
+	font-family: sans-serif,Verdana, Arial, Helvetica;
+	padding:1%;
+}
