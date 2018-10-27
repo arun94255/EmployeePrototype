@@ -1,3 +1,17 @@
+/*Common for all*/
+table tr td.first{
+	text-align:right;
+	
+}
+table tr td.mid{
+	text-align:center;
+}
+table tr td.end{
+	text-align:left;
+}
+
+
+
 /*Employee Maintanance Home*/
 h2,p.EMHh2a{
 font-family:Verdana, Arial, Helvetica, sans-serif;	
@@ -52,6 +66,15 @@ table.EMOtbl1 tr td{
 		text-align:right;
 	font-family:Verdana, Arial, Helvetica, sans-serif;	
      font-size:+13;		
+}
+/* view Employee*/
+
+table.VEtbl1{
+	width:32%;
+	border:0;
+	background-color:#CCCCCC;
+	margin-left:auto;
+	margin-right:auto;
 }
 /* Upload Employee Data*/
 div#UED_div{
