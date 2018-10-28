@@ -4,41 +4,61 @@
 <title>Employee Maintenance - Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="EmployeeMaintenanceCSS.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-@import url("EmployeeMaintenanceCSS.css");
--->
-</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-function redirect()
-{
-window.location="EmployeeMaintenanceOptions.html";
-}
+$(function(){
+	$("#btn1").click(function(event){
+		 event.preventDefault();
+		        request=$.ajax({
+	            url: "EmployeeMaintenanceHome.php",
+	            method: "POST",
+	            data: $('form').serialize(),
+	            dataType: "text"
+	      });
+
+	            request.done(function( response ) {
+								if(response=="ok"){
+									window.location.replace("EmployeeMaintenanceOptions.html");
+								}else{
+									$("#spn1").html(response);
+								}
+	            });
+
+	            request.fail(function( jqXHR, textStatus ) {
+					     	$("#spn1").html("request fail");
+	            });
+	    });
+});
 </script>
 </head>
 <body>
 <h2 class="EMHh2a" id="EMHh2">Employee Maintenance</h2>
-<h2 class="EMHh2a" >Please Login to continue</h2>
+<h2 class="EMHh2a" >Please Login to continue<br/><span id="spn1" style="color: red;"></span></h2>
+
+<form>
 <table id="EMHtbl1">
-  <tr> 
+  <tr>
     <td width="48%"> <div align="right">Enter User Id</div></td>
     <td width="2%"><font size="2">:</font></td>
-    <td width="50%"> <div align="left"><input type="text" name="textfield"></div></td>
+    <td width="50%"> <div align="left"><input type="text" name="userName"></div></td>
   </tr>
-  <tr> 
+  <tr>
     <td> <div align="right">Enter Password</div></td>
     <td>:</td>
-    <td> <div align="left"><input type="password" name="textfield2"></div></td>
+    <td> <div align="left"><input type="password" name="password"></div></td>
   </tr>
-  <tr> 
-    <td> <div align="right"><input type="submit" name="Submit" value="Submit" onclick = "redirect();"></div></td>
+  <tr>
+    <td> <div align="right"><input type="submit" name="Submit" id="btn1" value="Submit"></div></td>
     <td></td>
     <td> <div align="left"><input type="reset" name="Submit2" value="Reset"></div></td>
   </tr>
 </table>
+</form>
+<br/>
+
 <br/><br/>
 <table class="footer">
-  <tr> 
+  <tr>
     <td>&copy; ihGlobal Solutions 2005, All rights reserved.</td>
   </tr>
 </table>
