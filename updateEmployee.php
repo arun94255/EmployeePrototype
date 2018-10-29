@@ -1,23 +1,18 @@
 <?php
 require("connect.php");
-$EmployeeId=1;//$_POST["EmployeeId"];
-$FirstName="aditya";//$_POST["FirstName"];
-$LastName="mahule"//$_POST["LastName"];
-$DOB=1996-03-30//$_POST["DOB"];
-$DOJ="1996-03-30"//$_POST["DOJ"];
-$select="A"//$_POST["select"];
+$EmployeeId=$_POST["EmployeeId"];
+$empFirstName=$_POST["empFirstName"];
+$empLastName=$_POST["empLastName"];
+$dob=$_POST["dob"];
+$doj=$_POST["doj"];
+$grade=$_POST["grade"];
 
-$tql1="UPDATE employee  SET empFirstName=$FirstName, empLastName=$LastName,doj=$DOJ WHERE empNo=$EmployeeId";
+$tql1="update employee set empFirstName='".$empFirstName."', empLastName='".$empLastName."',doj='".$doj."',dob='".$doj."',grade='".$grade."' WHERE empNo='".$EmployeeId."'";
 
 $result = $conn->query($tql1);
-if ($conn->query($tql1) === TRUE) {
+if ($result == TRUE) {
     echo " successfully updated";
 } else {
     echo "Please try again after some time: " . $conn->error;
 }   
-
-
-
-
-
 ?>

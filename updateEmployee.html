@@ -35,13 +35,13 @@ event.preventDefault();
     dataType: "json"
      });
     request.done(function(response) {
-            //alert(response1);   
+             
               
-            $("#FirstName").val(response.empFirstName);
-              $("#LastName").val(response.empLastName);
-              $("#DOB").val(response.dob);
-              $("#DOJ").val(response.doj);
-              $("#Grade").select(response.grade);
+            $("#empFirstName").val(response.empFirstName);
+              $("#empLastName").val(response.empLastName);
+              $("#dob").val(response.dob);
+              $("#doj").val(response.doj);
+             $("#grade").val(response.grade);
             });
     request.fail(function( jqXHR, textStatus ) {
           alert("Request failed: " + textStatus);
@@ -55,9 +55,9 @@ $("#Submit").click(function(event){
     url: "updateEmployee.php",
     method: "POST",
     data: $('form').serialize(),
-    dataType: "json" });
+    dataType: "text" });
     request.done(function( response1) {   
-          $("#div1").html("done");
+          $("#div1").html(response1);
             });
     });
 
@@ -90,29 +90,29 @@ $("#Submit").click(function(event){
     <tr > 
       <td><div align="right"><font>First Name<span>*</span></div></td>
       <td>:</td>
-      <td><font><input name="FirstName" id="FirstName"type="text"></font></td>
+      <td><font><input name="empFirstName" id="empFirstName"type="text"></font></td>
     </tr>
     <tr> 
       <td><div align="right"><font>Last Name<span>*</span></div></td>
       <td> :</td>
-      <td><font><input name="LastName" id="LastName"type="text" ></font></td>
+      <td><font><input name="empLastName" id="empLastName"type="text" ></font></td>
     </tr>
     <tr > 
       <td><div align="right"><font>Date Of Birth</font></div></td>
       <td>:</td>
-      <td><font size="1" ><input name="DOB" id="DOB" type="text">
+      <td><font size="1" ><input name="dob" id="dob" type="text">
         (mm/dd/yyyy)</font></td>
     </tr>
     <tr> 
       <td><div align="right"><font>Date Of Joining<span>*</span></font></div></td>
       <td> :</td>
-      <td><font size="1" ><input name="DOJ" id="DOJ" type="text">(mm/dd/yyyy) </font></td>
+      <td><font size="1" ><input name="doj" id="doj" type="text">(mm/dd/yyyy) </font></td>
     </tr>
     <tr> 
       <td><div align="right"><font>Grade</font></div></td>
       <td>:</td>
       <td>
-        <select name="select" id="Grade"size="1">
+        <select name="grade" id="grade"size="1">
           <option>M1</option>
           <option>M2</option>
           <option>M3</option>
