@@ -1,14 +1,14 @@
 <?php
 require("connect.php");
-$EmployeeId=$_POST["EmployeeId"];
-$FirstName=$_POST["FirstName"];
-$LastName=$_POST["LastName"];
-$DOB=$_POST["DOB"];
-$DOJ=$_POST["DOJ"];
-$select=$_POST["select"];
+$EmployeeId=1;//$_POST["EmployeeId"];
+$FirstName="aditya";//$_POST["FirstName"];
+$LastName="mahule"//$_POST["LastName"];
+$DOB=1996-03-30//$_POST["DOB"];
+$DOJ="1996-03-30"//$_POST["DOJ"];
+$select="A"//$_POST["select"];
 
-$tql1="select * from employee where empNo='".$EmployeeId."'";
-//UPDATE employee  SET empFirstName='".$FirstName."', empLastName='".$LastName."',doj='".$DOJ."' WHERE empNo='".$EmployeeId."'
+$tql1="UPDATE employee  SET empFirstName=$FirstName, empLastName=$LastName,doj=$DOJ WHERE empNo=$EmployeeId";
+
 $result = $conn->query($tql1);
 if ($conn->query($tql1) === TRUE) {
     echo " successfully updated";
