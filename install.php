@@ -47,5 +47,12 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating table: " . $conn->error;
 }
 
+$sql="insert into login(userName,password,userType) values("admin","admin","admin");
+if ($conn->query($sql) === TRUE) {
+    echo " admin created successfully";
+} else {
+    echo "Error creating admin: " . $conn->error;
+}
+
 $conn->close();
 ?>
